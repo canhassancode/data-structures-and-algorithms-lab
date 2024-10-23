@@ -1,5 +1,10 @@
-import { findMediaSortedArrays } from "../../src/algorithms/binarySearch";
+import {
+  binarySearchBasic,
+  findMediaSortedArrays,
+} from "../../src/algorithms/binarySearch";
 
-test("findMedianSortedArrays", () => {
-  expect(findMediaSortedArrays([1, 2, 3], [2])).toBe(2.5);
+test("binarySearch", () => {
+  expect(binarySearchBasic([1, 2, 3, 44, 52, 60], 44)).toBe(3);
 });
+
+test.todo("findMedianSortedArrays");
